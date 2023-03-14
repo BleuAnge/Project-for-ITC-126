@@ -2,6 +2,9 @@
     --card-color: rgb(23, 23, 23);
 }
 
+.modal-text {
+    color: black;
+}
 #contact-screen {
     display: flex;
     align-items: center;
@@ -12,7 +15,7 @@
 #cards {
     display: flex;
     flex-wrap: wrap;
-    gap: 8px;
+    gap: 25px;
     max-width: 922px;
     width: calc(100% - 20px);
 }
@@ -23,7 +26,7 @@
     cursor: pointer;
     height: 390px;
     position: relative;
-    width: 300px;
+    width: 275px;
 }
 
 .card > .card-content {
