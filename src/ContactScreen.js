@@ -2,6 +2,8 @@ import './ContactScreen.css';
 import { useState } from 'react';
 import Button from 'react-bootstrap/esm/Button';
 import Modal from 'react-bootstrap/Modal';
+import FeedbackModal from './FeedbackModal';
+import ReportModal from './ReportModal';
 
 const ContactScreen = () => {
     const [showFeedbackModal, setFeedbackShow] = useState(false);
@@ -39,7 +41,7 @@ const ContactScreen = () => {
                 <Modal.Header closeButton>
                     <Modal.Title className='modal-text'>Feedback Form</Modal.Title>
                 </Modal.Header>
-                <Modal.Body className='modal-text'>Woohoo, you're reading this text in a modal!</Modal.Body>
+                <Modal.Body className='modal-text'><FeedbackModal></FeedbackModal></Modal.Body>
                 <Modal.Footer>
                     <Button variant="secondary" onClick={closeFeedbackModal}>
                         Close
@@ -54,7 +56,7 @@ const ContactScreen = () => {
                 <Modal.Header closeButton>
                     <Modal.Title className='modal-text'>Report Form</Modal.Title>
                 </Modal.Header>
-                <Modal.Body className='modal-text'>Woohoo, you're reading this text in a modal!</Modal.Body>
+                <Modal.Body className='modal-text'><ReportModal></ReportModal></Modal.Body>
                 <Modal.Footer>
                     <Button variant="secondary" onClick={closeReportModal}>
                         Close

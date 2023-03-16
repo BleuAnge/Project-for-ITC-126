@@ -1,0 +1,23 @@
+:root {
+    --bg-color: rgb(23, 23, 23);
+}
+
+.modal-body {
+    overflow: hidden;
+}
+
+.modal-main-info {
+    background-color: aqua;
+    margin: 0px;
+    padding: 10px;
+}
+
+.modal-submit-options {
+    background-color: limegreen;
+    margin: 0px;
+    padding: 10px;
+}
+
+.textbox {
+    resize: none;
+}
