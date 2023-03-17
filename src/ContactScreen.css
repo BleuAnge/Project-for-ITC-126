@@ -1,0 +1,47 @@
+:root {
+    --card-color: rgb(23, 23, 23);
+}
+
+.modal-text {
+    color: black;
+}
+#contact-screen {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+#cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px;
+    max-width: 922px;
+    width: calc(100% - 20px);
+}
+
+.card {
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    cursor: pointer;
+    height: 390px;
+    position: relative;
+    width: 275px;
+}
+
+.card > .card-content {
+    background-color: var(--card-color);
+    border-radius: inherit;
+    position: absolute;
+    inset: 5px;
+    margin: 1px;
+    z-index: 2;
+    cursor: pointer;
+
+    color: white;
+    font-size: clamp(3rem, 10vh, 8rem);
+    font-family: 'Bahnschript';
+
+    text-decoration: none;
+    text-align: center;
+}
