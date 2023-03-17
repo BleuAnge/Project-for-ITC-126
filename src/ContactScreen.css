@@ -1,5 +1,5 @@
 :root {
-    --card-color: rgb(23, 23, 23);
+    --card-color: rgb(255, 255, 255);
 }
 
 .modal-text {
@@ -20,28 +20,80 @@
     width: calc(100% - 20px);
 }
 
-.card {
-    background-color: rgba(255, 255, 255, 0.1);
-    border-radius: 10px;
+.card-body {
+    aspect-ratio: 1/1.6;
+    border: .75vmin solid var(--card-color);
     cursor: pointer;
-    height: 390px;
     position: relative;
-    width: 275px;
+    width: 30vmin;
+    overflow: hidden;
 }
 
-.card > .card-content {
-    background-color: var(--card-color);
-    border-radius: inherit;
+.card-body:before {
+    opacity: 0.6;
+    background: linear-gradient(
+        130deg,
+        transparent 0% 33%,
+        #5e5977 66%,
+        #8c6ebe 83.5%,
+        #e5813b 100%
+    );
+    background-position: 0% 0%;
+    background-size: 300% 300%;
+    content: "";
     position: absolute;
-    inset: 5px;
-    margin: 1px;
-    z-index: 2;
-    cursor: pointer;
+    height: 100%;
+    width: 100%;
+    left: 0px;
+    top: 0px;
+    transition: background-position 350ms ease;
+    z-index: -1;
+}
 
+.card-body:hover:before {
+    background-position: 100% 100%;
+    transform: scale(1.08, 1.03);
+}
+
+.card-content {
+    background: radial-gradient(
+        rgba(255, 255, 255, 0.2) 8%,
+        transparent 8%
+    );
+    background-position: 0% 0%;
+    background-size: 5vmin 5vmin;
+    padding: 5vmin;
+    height: 100%;
+    width:  100%;
+    transition: background-position 350ms ease;
+}
+
+.card-body:hover > .card-content {
+    background-position: -25% 0%;
+}
+
+.card-title, .card-subtitle {
     color: white;
-    font-size: clamp(3rem, 10vh, 8rem);
-    font-family: 'Bahnschript';
+    font-family: "Bahnscrift";
+    font-weight: 100;
+    margin: 0px;
+}
 
-    text-decoration: none;
-    text-align: center;
+.card-title {
+    font-size: 6vmin;
+}
+
+.card-subtitle {
+    font-size: 3vmin;
+    margin: 2vmin;
+    display: inline-block;
+    position: relative;
+    transform: translate(20%, 80%);
+    opacity: 0;
+    transition: opacity 400ms ease, transform 400ms ease;
+}
+
+.card-content:hover > .card-subtitle {
+    opacity: 1;
+    transform: translateY(0%);
 }

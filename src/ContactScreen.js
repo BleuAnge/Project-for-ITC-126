@@ -1,5 +1,6 @@
 import './ContactScreen.css';
 import { useState } from 'react';
+import { useEffect } from 'react';
 import Button from 'react-bootstrap/esm/Button';
 import Modal from 'react-bootstrap/Modal';
 import FeedbackModal from './FeedbackModal';
@@ -23,16 +24,25 @@ const ContactScreen = () => {
         <>
             <div id="contact-screen">
                 <div id="cards">
-                    <div className="card">
-                        <button className="card-content"  onClick={openFeedbackModal}>Send Feedback</button>
+                    <div className="card-body" onClick={openFeedbackModal}>
+                        <div className="card-content">
+                            <h3 className="card-title">Send Feedback</h3>
+                            <h5 className="card-subtitle">Tell us your Experience</h5>
+                        </div>  
                     </div>
 
-                    <div className="card">
-                        <button className="card-content" onClick={openReportModal}>Report Issue</button>
+                    <div className="card-body" onClick={openReportModal}>
+                        <div className="card-content">
+                            <h3 className="card-title">Report Issue</h3>
+                            <h5 className="card-subtitle">Have any problem with the app? Come tell us!</h5>
+                        </div>    
                     </div>
 
-                    <div className="card">
-                        <button className="card-content" onClick={openApplicationModal}>Apply To Us</button>
+                    <div className="card-body" onClick={openApplicationModal}>
+                        <div className="card-content">
+                            <h3 className="card-title">Apply to Us</h3>
+                            <h4 className="card-subtitle">Wanna work with Us? Come and apply Now!</h4>
+                        </div>
                     </div>
                 </div>
             </div>

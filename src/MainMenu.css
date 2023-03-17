@@ -1,11 +1,12 @@
 body {
     background-color: rgb(20,20,20);
+    margin: 0px;
 }
 
 #menu {
     position: absolute;
-    width: 100%;
-    height: 90vh;
+    width: 100vw;
+    height: 100vh;
     display: flex;
     align-items: center;
     overflow: hidden;
@@ -32,8 +33,7 @@ body {
 
 #menu-items {
     margin-left: clamp(4rem, 20vw, 48rem);
-    position: absolute;
-    top: 25%;
+    position: relative;
     z-index: 2;
 }
 
@@ -54,7 +54,8 @@ body {
     z-index: 1;
 
     transition: opacity 800ms ease,
-    background-size 800ms ease;
+    background-size 800ms ease, 
+    background-position 200ms ease;
 }
 
 #menu-items:hover ~ #menu-bg-pattern {
@@ -93,12 +94,12 @@ body {
     background-size: 15vmax;
     opacity: 0.15;
     
-    transition: opacity 800ms ease,
+    transition: opacity 1600ms ease,
     background-size 800ms ease,
     background-position 800ms ease;  
 }
 
 #menu-items:hover ~ #menu-bg-image {
     background-size: 20vmax;
-    opacity: 0.5;
+    opacity: 1;
 }
