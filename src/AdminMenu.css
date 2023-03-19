@@ -29,6 +29,7 @@
     background-color: var(--main-color);
     height: 44vh;
     border: 3px solid var(--tertiary-color);
+    border-radius: 5%;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -40,6 +41,7 @@
     background-color: var(--main-color);
     height: 43vh;
     border: 3px solid var(--tertiary-color);
+    border-radius: 5%;
     padding: 10px;
     display: flex;
     align-items: center;
@@ -52,6 +54,7 @@
     width: 25vmin;
     aspect-ratio: 5/ 7;
     border: 1px solid var(--tertiary-color);
+    border-radius: 10%;
 
     color: white;
     text-align: center;
@@ -69,4 +72,5 @@
     width: 40vw;
     overflow: hidden;
     border: 3px solid var(--tertiary-color);
+    border-radius: 5%;
 }
