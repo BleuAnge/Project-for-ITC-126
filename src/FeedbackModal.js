@@ -5,12 +5,12 @@ const FeedbackModal = () => {
     return (
         <div className="modal-body">
             <div className="modal-main-info">
-                <p>Feedback Ticket ID: 111111</p><br></br>
+                <p>Feedback Ticket ID: 111111</p>
                 <p>Username: Ytma Natz</p>
             </div>
             <div className="modal-submit-options">
-                <label for="feedback-rate">Please Rate Us: </label><br></br>
-                <div class="rate">
+                <label for="feedback-rate" className='rate-text'>Please Rate Us: </label><br></br>
+                <div className="rate">
                     <input type="radio" id="star5" name="rate" value="5" />
                     <label for="star5" title="text">5 stars</label>
                     <input type="radio" id="star4" name="rate" value="4" />
@@ -29,6 +29,7 @@ const FeedbackModal = () => {
                     This is a.... FEEDBACK!
                 </textarea>
             </div>
+            <div id="feedback-image"></div> 
         </div>
     )
 }

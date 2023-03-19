@@ -6,11 +6,8 @@ const ReportModal = () => {
         <div className="modal-body">
             <div className="modal-main-info">
                 <p>Report Ticket ID: 111111</p>
-                <br></br>
                 <p>Date: 3/16/23</p>
-                <br></br>
                 <p>Time: 9:46 am</p>
-                <br></br>
                 <p>Username: Ytma Natz</p>
             </div>
             <div className="modal-submit-options">

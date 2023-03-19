@@ -1,23 +1,51 @@
 :root {
-    --bg-color: rgb(23, 23, 23);
+    --bg-color: rgb(20, 20, 20);
+    --font-color: white;
 }
 
-.modal-body {
+.modal-body, .modal-header, .modal-footer {
     overflow: hidden;
-}
-
-.modal-main-info {
-    background-color: aqua;
+    background-color: var(--bg-color);
+    color: var(--font-color);
     margin: 0px;
     padding: 10px;
+    border: .5vmin solid #8c6ebe;
+    font: 3vmin 'bahnschrift';
+
+}
+
+.modal-close-button, .modal-save-button {
+    border-radius: 20%;
+    border: .3vmin solid #8c6ebe;
+    padding-inline: 5% 5%;
+    padding-block: 1% 1%;
+}
+
+.modal-text {
+    color: white;
 }
 
 .modal-submit-options {
-    background-color: limegreen;
+    background-color: transparent;
     margin: 0px;
     padding: 10px;
 }
 
 .textbox {
     resize: none;
+}
+
+#feedback-image {
+    height: 100%;
+    width: 50%;
+    
+    background: url("./assets/feedback.png") no-repeat center center;
+
+    position: absolute;
+    left: 50%;
+    top: 18%;
+    z-index: 1;
+
+    background-position: center;
+    background-size: 15vmax;
 }

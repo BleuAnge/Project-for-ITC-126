@@ -23,7 +23,7 @@ body {
 .menu-item {
     color: white;
     font-size: clamp(3rem, 8vh, 8rem);
-    font-family: 'Bahnschript';
+    font-family: 'bahnschrift';
     
     display: block;
     text-decoration: none;

@@ -1,5 +1,9 @@
 export const navItems = [
     {
+        title: 'Go Back',
+        url: '/',
+    },
+    {
         title: 'Accounts',
         url: '/Accounts',
         subMenu: [

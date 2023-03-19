@@ -5,6 +5,7 @@ import Button from 'react-bootstrap/esm/Button';
 import Modal from 'react-bootstrap/Modal';
 import FeedbackModal from './FeedbackModal';
 import ReportModal from './ReportModal';
+import './Modal.css';
 
 const ContactScreen = () => {
     const [showFeedbackModal, setFeedbackShow] = useState(false);
@@ -53,12 +54,8 @@ const ContactScreen = () => {
                 </Modal.Header>
                 <Modal.Body className='modal-text'><FeedbackModal></FeedbackModal></Modal.Body>
                 <Modal.Footer>
-                    <Button variant="secondary" onClick={closeFeedbackModal}>
-                        Close
-                    </Button>
-                    <Button variant="primary" onClick={closeFeedbackModal}>
-                        Save Changes
-                    </Button>
+                    <button className='modal-close-button' onClick={closeFeedbackModal}>Close</button>
+                    <button className='modal-save-button' onClick={closeFeedbackModal}>Save</button>
                 </Modal.Footer>
             </Modal>
 
@@ -68,12 +65,8 @@ const ContactScreen = () => {
                 </Modal.Header>
                 <Modal.Body className='modal-text'><ReportModal></ReportModal></Modal.Body>
                 <Modal.Footer>
-                    <Button variant="secondary" onClick={closeReportModal}>
-                        Close
-                    </Button>
-                    <Button variant="primary" onClick={closeReportModal}>
-                        Save Changes
-                    </Button>
+                    <button className='modal-close-button' onClick={closeFeedbackModal}>Close</button>
+                    <button className='modal-save-button' onClick={closeFeedbackModal}>Save</button>
                 </Modal.Footer>
             </Modal>
 
@@ -83,12 +76,8 @@ const ContactScreen = () => {
                 </Modal.Header>
                 <Modal.Body className='modal-text'>Woohoo, you're reading this text in a modal!</Modal.Body>
                 <Modal.Footer>
-                    <Button variant="secondary" onClick={closeApplicationModal}>
-                        Close
-                    </Button>
-                    <Button variant="primary" onClick={closeApplicationModal}>
-                        Save Changes
-                    </Button>
+                    <button className='modal-close-button' onClick={closeFeedbackModal}>Close</button>
+                    <button className='modal-save-button' onClick={closeFeedbackModal}>Save</button>
                 </Modal.Footer>
             </Modal>
         </> 
