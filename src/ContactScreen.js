@@ -1,7 +1,5 @@
 import './ContactScreen.css';
 import { useState } from 'react';
-import { useEffect } from 'react';
-import Button from 'react-bootstrap/esm/Button';
 import Modal from 'react-bootstrap/Modal';
 import FeedbackModal from './FeedbackModal';
 import ReportModal from './ReportModal';
