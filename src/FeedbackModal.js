@@ -25,7 +25,7 @@ const FeedbackModal = () => {
                 <br></br>
                 <br></br>
                 <label for="textbox">Input Feedback Here: </label><br></br>
-                <textarea className="textbox" rows="4" column="50">
+                <textarea className="textbox" name="feedback-input" rows="4" column="50">
                     This is a.... FEEDBACK!
                 </textarea>
             </div>

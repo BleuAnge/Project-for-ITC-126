@@ -41,3 +41,8 @@
 .rate-text {
     font-size: 2vmin;
 }
+
+.textbox {
+    width: 100px;
+    height: 100px;
+}

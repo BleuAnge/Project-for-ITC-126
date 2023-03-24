@@ -44,8 +44,9 @@ const ContactScreen = () => {
                         </div>
                     </div>
                 </div>
+                <div className='contact-screen-bg'></div>
             </div>
-
+        
             <Modal show={showFeedbackModal} onHide={closeFeedbackModal}>
                 <Modal.Header closeButton>
                     <Modal.Title className='modal-text'>Feedback Form</Modal.Title>

@@ -1,7 +1,7 @@
 export const navItems = [
     {
         title: 'Go Back',
-        url: '/',
+        url: './',
     },
     {
         title: 'Accounts',
